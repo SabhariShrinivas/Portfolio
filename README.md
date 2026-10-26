@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Sabhari Shrinivas, portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio: gameplay videos, playable links and short write-ups of what I built.
+Live at https://portfolio-sabhari-shrinivas.vercel.app/ (Vercel deploys from `main`).
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/bacac682-6828-4da6-964e-6b9c530f2025
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+Opens on http://localhost:3000.
 
-**Prerequisites:**  Node.js
+## Where things are
 
+- `src/data.ts`: all the words, links and media. Edit this to add or change a project.
+- `src/App.tsx`: the page sections.
+- `src/ReplayDemo.tsx`: the small snapshot-replay warehouse sim in the Synkrato section.
+- `src/index.css`: all styling. Colours and type sizes are the variables at the top.
+- `public/media/`: gameplay videos (720p MP4). `public/Sabhari_Shrinivas_Resume.pdf`: the resume the site links to.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Adding a project
+
+Add an entry to `projects` in `src/data.ts`. `media` can be a video in `public/media`, an image URL, or a YouTube id:
+
+```ts
+media: {kind: 'youtube', id: 'dQw4w9WgXcQ'},
+```
