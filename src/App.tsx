@@ -315,13 +315,14 @@ function ProjectText({project, index, phone}: {project: Project; index: number; 
           <li key={b}>{b}</li>
         ))}
       </ul>
-      {project.actions.length > 0 && (
+      {(project.actions.length > 0 || project.soon) && (
         <p className="work__actions" data-reveal>
           {project.actions.map((a, i) => (
             <a key={a.href} className={i === 0 ? 'btn' : 'btn btn--quiet'} href={a.href} target="_blank" rel="noreferrer">
               {a.label}
             </a>
           ))}
+          {project.soon && <span className="btn btn--soon">{project.soon}</span>}
         </p>
       )}
     </article>

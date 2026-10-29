@@ -33,10 +33,33 @@ export interface Project {
   /** What the monitor shows while this project is read. */
   media: Media;
   actions: {label: string; href: string}[];
+  /** A link that isn't live yet, shown as a label after the actions, e.g. "Steam page coming soon". */
+  soon?: string;
 }
 
 // Newest first: scrolling down the page rewinds the timeline.
 export const projects: Project[] = [
+  {
+    id: 'taste-of-the-times',
+    name: 'Taste of the Times',
+    years: '2026',
+    context: 'Solo, Unity 6 · my first commercial game, coming to Steam',
+    summary:
+      'A street-food stall sim across 250 years, from 1800 to 2050. Nobody tells you the recipe: every crowd has hidden tastes, and the reviews only hint at them. Work out what each street wants, research the ingredients and kit history brings, and keep up, because tastes move on and a stall that stands still closes.',
+    statement: 'Keep up, or close.',
+    built: [
+      'A hidden recipe formula: ingredients carry tags, crowds carry hidden weights over them, and every dish scores on a gradient, never right or wrong, so there is no answer to look up.',
+      'Reviews that name each customer’s deciding factor, and a Discovery Book that records what cooking has taught you.',
+      'Every ingredient, crowd, street, era and number is data in ScriptableObjects; the rules are plain C#, so tests and bots play whole runs without the Editor.',
+      'Balance tests with bot players encode the design: guessing goes broke, standing still closes before 1950, keeping up reaches 2050.',
+      'A save that is only the seed and the player’s actions, replayed on Continue.',
+      'A first-person 3D food cart with the UI on its counter and shutter, in front of 43 street sets that change from 1800 to 2045.',
+      'The trailer, staged rather than captured: HTML mock screens rendered frame by frame in a headless browser over 3D shots, then cut with ffmpeg.',
+    ],
+    media: {kind: 'video', src: '/media/taste-of-the-times.mp4', start: 0},
+    actions: [],
+    soon: 'Steam page coming soon',
+  },
   {
     id: 'five-deaths',
     name: 'Five Deaths',
