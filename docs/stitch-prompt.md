@@ -116,7 +116,7 @@ Work history (a simple table):
 2023–25 · Unity Developer · Gaea Global Technologies
 2022–23 · Front-End Game Developer · Small World Games
 2020–22 · Freelance Game Developer · Upwork and indie clients
-Skills: C#, Unity (DOTS/ECS, Jobs, Burst, Addressables, URP, Profiler), Roblox (Luau), NavMesh and A*, state machines, simulation and replay systems, editor tooling, agentic workflows with Claude and MCP. B.Sc. Computer Science, Sethu Institute of Technology.
+Skills: C#, Unity (DOTS/ECS, Jobs, Burst, Addressables, URP, Profiler), Roblox (Luau), NavMesh and A*, state machines, simulation and replay systems, editor tooling, agentic workflows with Claude and MCP. B.E. Computer Science, Sethu Institute of Technology.
 Links (one row, these are the only contact links on the page): sabhari.thirumurugan@gmail.com · LinkedIn · GitHub · itch.io · Upwork · Resume (PDF)
 Last line, small: © 2026 Sabhari Shrinivas, Bangalore. Death Ball belongs to Small World Games, Synkrato to Gaea Global Technologies.
 
