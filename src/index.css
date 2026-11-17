@@ -413,6 +413,14 @@ img.fill {
   font-size: 14px;
   font-weight: 500;
 }
+.work__context a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.work__context a:hover {
+  text-decoration-thickness: 2px;
+}
 .work__context--primary {
   color: var(--primary);
 }

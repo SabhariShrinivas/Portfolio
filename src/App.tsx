@@ -298,6 +298,14 @@ function ProjectText({project, index, phone}: {project: Project; index: number; 
       )}
       <p className={`work__context work__context--${accentFor(index)}`} data-reveal>
         {project.context}
+        {project.contextLink && (
+          <>
+            {' '}
+            <a href={project.contextLink.href} target="_blank" rel="noreferrer">
+              {project.contextLink.label}
+            </a>
+          </>
+        )}
       </p>
       <p className="work__summary" data-reveal>
         {project.summary}
